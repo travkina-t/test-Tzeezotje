@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.header-content {
+    width: 100%;
+    height: 901px;
+    background-image: url("images/bg1.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    z-index: 2;
+}
+
+.header-content nav {
+    display: flex;
+    margin-bottom: 154px;
+    margin-top: 55px;
+
+}
+
+.header-content nav .logo {
+    margin-right: 107.5px;
+}
+
+.header-content nav ul {
+    margin-right: 136.5px;
+}
+
+.header-content nav ul li{
+    display: inline-block;
+    margin: 0 22.5px;
+    margin-top: 20px;
+    transition: 0.8s;
+}
+
+.header-content nav ul li:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.header-content .phone {
+    display: flex;
+    width: 150px;
+    margin-top: 20px;
+}
+
+.header-content .phone img {
+    width: 20px;
+    height: 20px;
+    
+}
+
+.header-text {
+    max-width: 1168px;
+}
+
+.header-text p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px;
+    letter-spacing: 0.06em;
+}
+
+.header-text h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 88px;
+}
+
+button {
+    width: 270px;
+    height: 100px;
+    background: #3A4574;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    border: none;
+    transition: 1s;
+}
+
+
+.reserve {
+  z-index: 11;
+}
+
+button:hover {
+    color: #3A4574;
+    background: white;
+    cursor: pointer;
+}
+
+.header-text .btn-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.header-text .btn-icons .icons {
+    align-self: center;
+}
+
+
+.header-text .btn-icons .icons img {
+    margin-left: 25px;
+}
+
+/*Section timetable*/
+
+ .timetable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    padding: 80px 0px;
+}
+
+.timetable .images {
+    display: flex;
+    height: 571px;
+}
+
+.timetable img {
+    width: 323px;
+    height: 486px;
+} 
+
+.timetable .first {
+    margin-right: 22px;
+    align-self: flex-end;
+}
+
+
+.left-timetable {
+    max-width: 500px;
+    margin-right: 32px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.left-timetable .day {
+    border-bottom: 1px solid #E7E7E7;
+    padding: 20px 0px;
+}
+
+.left-timetable .day  h2 {
+    margin-bottom: 10px;
+}
+
+.right-timetable {
+    position: relative;
+    max-width: 678px;
+    
+}
+
+.timetable-bg {
+    position: absolute;
+    width: 471px;
+    height: 502px;
+    border: 2px solid #D3B47F;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index: -1;
+}
+
+.timetable .day img {
+    width: 5px;
+    height: 5px;
+    margin: 4px 6px;
+} 
+
+.about-service {
+    width: 100%;
+    height: 782px;
+    background-color: #3A4574;
+}
+
+.swiper{
+    max-width: 1200px;
+    height: 100%;
+    
+  }
+  .swiper-slide{
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide img{
+    width: 83px;
+    height: 58px;
+    object-fit: cover;
+    margin-bottom: 34px;
+  }
+
+  .swiper-slide h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    max-width: 783px;
+  }
+
+  .swiper-slide p {
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 783px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+
+  .swiper-slide h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+
+    letter-spacing: 0.245em;
+  }
+  .swiper-slide h2, .swiper-slide h3 {
+    color: #D3B47F;
+  }
+
+  .swiper-button-next, .swiper-rtl .swiper-button-prev{
+    right: 0px !important; 
+    left: auto;
+    color: #D3B47F;
+  }
+  .swiper-button-prev, .swiper-rtl .swiper-button-next{
+    left: 0px !important; 
+    right: auto;
+    color: white;
+  }
+
+  /*Modalwindow*/
+
+  .modal {
+    width: 700px;
+    height: 650px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-left: 20px;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 17;
+  }
+
+  .modal h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 88px;
+  }
+
+  .modal input {
+    width: 320px;
+    height: 80px;
+    border: 1px solid #CCCCCC;
+    margin-right: 19px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 16px;
+  }
+
+  .modal input::placeholder, .modal textarea::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;   
+
+  }
+
+  .modal textarea {
+    width: 660px;
+    height: 125px;
+    padding-left: 16px;
+    padding-top: 28px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #CCCCCC;
+  }
+
+  .modal .name-email {
+    display: flex;
+  }
+
+  .hidden {
+    display: none;
+    
+  }
+
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: 16;
+  }
+
+  .add-margin {
+    margin-top: 700px; 
+  }
+
+
+  /*Mobile menu*/
+
+  .menu-mobile .menu {
+    position: absolute;
+    top:5%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width: 100%;
+    z-index: 1;
+
+  }
+
+  .reserve-mobile {
+    z-index: 15;
+    width: 270px;
+    height: 150px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 20px;
+  }
+
+  .menu-mobile .menu:hover, .reserve-mobile:hover {
+    background-color: #3A4574;
+    color: white;
+  }
+
+  .mobile-content {
+    position: absolute;
+    top:5%;
+    left:0%;
+    text-align: center; 
+    background-color: #3A4574;
+    color: white;
+    font-size: 40px;
+    z-index: 10;
+    width: 100%;
+    transition-property: opacity;
+    transition: 1s;
+  }
+
+  .mobile-content .exit {
+    width: 30px;
+    height: 30px;
+    font-weight: 500;
+    font-size: 25px;
+    border: none;
+    transition: 0.5s;
+    text-align: right;
+  }
+
+  .mobile-content .exit:hover {
+    transform: scale(1.3);
+    background-color: #3A4574;
+    color: white;
+  }
+
+  .mobile-content ul {
+    margin-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .mobile-content ul li {
+    padding: 10px 20px;
+    line-height: 30px;
+    margin-top: 10px;
+  }
+
+
+
+  .mobile-content ul li a{
+    padding: 0 20px;
+    border-bottom: 1px solid #D3B47F;
+  }
+
+  .mobile-content ul li:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+  }
+
+  .mobile-content .icons {
+    margin: 30px 0px;
+  }
+
+  @media (max-width: 1200px) {
+    .header-text {
+      max-width: 768px;
+  }
+
+  
+  .header-content nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-content nav .logo {
+    margin-right: 0px;
+    width: 320px;
+    height: 65px;
+  }
+
+  .header-content nav ul {
+    margin-right: 0px;
+  }
+
+  .header-content nav {
+    margin-bottom: 70px;
+  }
+
+  .timetable {
+    flex-direction: column;
+    height: 1200px;
+  }
+
+  .swiper {
+    max-width: 768px;
+  }
+
+  .swiper-slide h2,   .swiper-slide p {
+    max-width: 500px;
+  }
+
+  .modal {
+    width: 550px;
+    height: 510px;
+  }
+
+  .modal input {
+    width: 220px;
+    height: 55px;
+  }
+
+  .modal textarea {
+    width: 460px;
+    height: 100px;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .header-text {
+    max-width: 550px;
+}
+
+.timetable {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+
+.timetable img {
+  width: 242px;
+  height: 360px;
+} 
+
+.swiper {
+  max-width: 700px;
+}
+
+.swiper-slide h2,   .swiper-slide p {
+  max-width: 550px;
+}
+}
+
+@media (max-width: 600px) {
+
+  .timetable {
+    font-size: smaller;
+  }
+
+  .timetable {
+    flex-direction: column-reverse;
+  }
+
+  .timetable .images {
+    height: 400px;
+    margin-bottom: 100px;
+  }
+
+.timetable img {
+    width: 161px;
+    height: 243px;
+} 
+
+.timetable .first {
+    margin-right: 22px; 
+}
+
+.timetable-bg {
+  
+  width: 235px;
+  height: 251px;
+
+}
+
+.swiper {
+  max-width: 500px;
+}
+
+.swiper-slide h2,   .swiper-slide p {
+  max-width: 400px;
+}
+
+.modal {
+  width: 400px;
+  height: 610px;
+  font-size: smaller;
+}
+
+.modal h1 {
+  font-size: 26px;
+}
+.modal button {
+  width: 150px;
+  height: 70px;
+}
+
+.modal textarea {
+  width: 360px;
+  height: 100px;
+}
+
+.modal .name-email {
+  flex-direction: column;
+}
+}
